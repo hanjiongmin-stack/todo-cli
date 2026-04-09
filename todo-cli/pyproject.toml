@@ -1,0 +1,30 @@
+# 工具的配置
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# 项目的信息
+[project]
+name = "todo-cli"
+version = "0.1.0"
+authors = [
+  { name="韩炅珉", email="hanjiongmin@gmail.com" } 
+]
+description = "我的第一个命令行待办工具"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+# 安装完之后生成todo命令
+[project.scripts]
+todo = "todo_cli.main:main"
+
+# 测试的配置
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v"

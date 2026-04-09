@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: todo-cli
+Version: 0.1.0
+Summary: 我的第一个命令行待办工具
+Author-email: 韩炅珉 <hanjiongmin@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Dynamic: license-file
+
+\# 我的待办小工具
+
+
+
+这是我做的第一个Python小工具，用来在终端管理待办任务～
+
+
+
+\### 使用方法
+
+\- `todo add "任务内容"`：添加新任务
+
+\- `todo list`：查看所有任务
+
+\- `todo done 编号`：标记任务完成
+
+\- `todo delete 编号`：删除任务
+
